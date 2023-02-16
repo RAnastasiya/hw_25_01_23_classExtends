@@ -91,7 +91,7 @@ class PhysicalProduct extends Product {
     this._weight = value;
   }
   getInfo() {
-    return `Name: ${this._name}, Price: ${this._price}, Current: ${this._current}, Quantity: ${this._quantity}, Weight: ${this._weight}`;
+    return super.getInfo() + `, Weight: ${this._weight}`;
   }
 }
 class OnlineProduct extends Product {
@@ -112,7 +112,7 @@ class OnlineProduct extends Product {
     this._memorySize = value;
   }
   getInfo() {
-    return `Name: ${this._name}, Price: ${this._price}, Current: ${this._current}, Quantity: ${this._quantity}, Memory size: ${this._memorySize}`;
+    return super.getInfo() + `, Memory size: ${this._memorySize}`;
   }
 }
 
